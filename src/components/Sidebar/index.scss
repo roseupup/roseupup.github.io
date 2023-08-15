@@ -1,0 +1,93 @@
+.nav-bar {
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  min-height: 50px;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px;
+  position: fixed; 
+  top: 0; // Ensure it sticks to the top
+  border-top: 0px;
+
+  .socialMediaLink {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 30px;
+    .linkedin-icon {
+      font-size: 15px;
+      display: block;
+      margin: 10px;
+      transition: transform 0.3s ease, color 0.3s ease;
+      color: #ffffff;
+      svg {
+        color: #ffffff;
+      }
+      &:hover {
+        transform: scale(1.2);
+        color: #0077b5;
+        svg {
+          color: #f5a623;
+        }
+      }
+    }
+  }
+}
+
+.logo {
+  display: block;
+  padding: 15px;
+
+  img {
+    display: block;
+    margin: 0;
+    width: 60px;
+    height: auto;
+  }
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  a {
+    font-size: 25px;
+    margin:  10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: #ffff;
+    font-family: 'Coolvetica';
+    font-weight: 200;
+    margin-left: 40px;
+    text-decoration: none;
+    .IconLinkText {
+      font-size: 25px; // Adjust as needed
+      font-weight: 100;
+      text-decoration-line: none;
+  
+      color: #ffffff;
+      transition: color 0.3s ease-in-out;  
+      &:hover {
+        color: #5bce0d;
+      }
+    }
+    &:hover {
+      transform: scale(1);
+      svg {
+        color: #f5a623;
+      }
+    }
+
+    &.active {
+      svg {
+        color: #f5a623;
+      }
+    }
+  }
+}
+
+
